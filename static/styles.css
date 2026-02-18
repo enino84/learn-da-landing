@@ -1,0 +1,307 @@
+/* =========================
+   GLOBAL BACKGROUND
+   ========================= */
+
+body {
+  background:
+    radial-gradient(1200px 600px at 15% 10%, rgba(59,130,246,.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 25%, rgba(16,185,129,.14), transparent 55%),
+    #0b1220;
+
+  min-height: 100vh;
+}
+
+
+/* =========================
+   HERO TITLE
+   ========================= */
+
+.hero-title {
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+
+/* =========================
+   GLASS EFFECT CARDS
+   ========================= */
+
+.glass {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+
+/* =========================
+   TEXT MUTED
+   ========================= */
+
+.muted {
+  color: rgba(255,255,255,.75);
+}
+
+
+/* =========================
+   CARD HOVER EFFECT
+   ========================= */
+
+.card-hover {
+  transition:
+    transform .18s ease,
+    background .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+
+  background: rgba(255,255,255,.09);
+
+  border-color: rgba(255,255,255,.25);
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+
+/* =========================
+   CARD IMAGE WRAPPER (BASE)
+   ========================= */
+
+.card-image-wrapper {
+  width: 100%;
+  height: 160px;
+
+  border-radius: 16px;
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,.12);
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.30),
+    inset 0 1px 0 rgba(255,255,255,.05);
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   VARIANT A: WHITE + CONTAIN
+   (default look: clean, no crop)
+   ========================= */
+
+.card-image-wrapper.is-white {
+  background: #ffffff;
+}
+
+.card-image-wrapper.is-white .card-image-inner {
+  object-fit: contain;
+  padding: 12px;          /* aire bonito */
+}
+
+/* =========================
+   VARIANT B: DARK + COVER
+   (coming soon look: full bleed)
+   ========================= */
+
+.card-image-wrapper.is-cover {
+  background: rgba(0,0,0,.22); /* o transparente */
+}
+
+.card-image-wrapper.is-cover .card-image-inner {
+  object-fit: cover;
+  padding: 0;             /* sin padding para full-bleed */
+}
+
+
+/* =========================
+   CARD IMAGE (BASE)
+   ========================= */
+
+.card-image-inner {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  border-radius: inherit;
+
+  transition:
+    transform .35s ease,
+    filter .35s ease;
+}
+
+
+/* Optional subtle hover zoom */
+.card-hover:hover .card-image-inner {
+  transform: scale(1.03);
+}
+
+
+/* =========================
+   BADGES
+   ========================= */
+
+.badge-soft {
+  background: rgba(59,130,246,.18);
+  border: 1px solid rgba(59,130,246,.35);
+  color: #cfe3ff;
+  font-weight: 500;
+}
+
+.badge-soft-alt {
+  background: rgba(16,185,129,.14);
+  border: 1px solid rgba(16,185,129,.28);
+  color: #d9ffe9;
+  font-weight: 500;
+}
+
+.badge-soon {
+  background: rgba(245,158,11,.14);
+  border: 1px solid rgba(245,158,11,.32);
+  color: #ffe6bf;
+  font-weight: 500;
+}
+
+
+/* =========================
+   EQUATION BOX
+   ========================= */
+
+.equation-box {
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px;
+  padding: 14px 16px;
+  overflow-x: auto;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+
+/* =========================
+   CODE BOX
+   ========================= */
+
+.code-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  background: rgba(0,0,0,.30);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px;
+
+  padding: 12px 14px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.code-box code {
+  color: #ffffff;
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Liberation Mono",
+    "Courier New",
+    monospace;
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================
+   COPY BUTTON
+   ========================= */
+
+#copyBtn {
+  border-radius: 8px;
+  transition: all .15s ease;
+}
+
+#copyBtn:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.08);
+}
+
+
+/* =========================
+   COMING SOON CARDS
+   ========================= */
+
+.coming-soon {
+  opacity: 0.95;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+a { color: inherit; }
+a:hover { color: inherit; }
+
+
+/* =========================
+   SMOOTH RENDERING
+   ========================= */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================
+   CONTAINER MAX WIDTH
+   ========================= */
+
+.container {
+  max-width: 1100px;
+}
+
+
+/* =========================
+   LOGO IMAGE
+   ========================= */
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* =========================
+   HERO LOGO (FULL RESPONSIVE)
+   ========================= */
+
+.hero-logo {
+
+  width: 100%;
+  max-width: 1000px;
+
+  height: auto;
+
+  margin-bottom: 14px;
+
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
+
+  transition: transform .2s ease;
+}
