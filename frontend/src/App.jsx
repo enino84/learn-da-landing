@@ -70,11 +70,12 @@ function FounderModal({ open, onClose }) {
               <button className="founder-close" onClick={onClose}>✕</button>
             </div>
             <div className="founder-modal-body">
-              <p>Learn-DA was born from a simple but persistent frustration: <b>the scientific tools behind modern weather and climate forecasting were powerful, but almost impossible to access without the infrastructure of a large research institution.</b></p>
-              <p>During my Ph.D. and throughout my academic career, I saw how much time researchers and students spent just trying to <b>set up, configure, and run</b> atmospheric models — before they could even get to the science they cared about. That overhead is a barrier, and it should not be.</p>
-              <p>Learn-DA was built to remove that barrier. Whether you are a <b>PhD student exploring data assimilation for the first time</b>, a <b>university professor</b> looking for reproducible simulation tools to use in your courses, or a team that wants to run <b>regional or global climate experiments</b> — the platform gives you the same scientific rigor, without the setup cost.</p>
-              <p>The goal has always been the same: make ensemble data assimilation and atmospheric modeling <b>transparent, accessible, and genuinely useful</b> — for science, for education, and for the real-world problems that depend on accurate atmospheric knowledge.</p>
-              <div className="modal-sig">— Elías D. Niño-Ruiz, Ph.D.</div>
+              <p>Learn-DA was born from a clear vision: <b>the scientific tools behind modern weather and climate forecasting are extraordinarily powerful — and every researcher, student, and team should be able to use them, regardless of their institution's infrastructure.</b></p>
+              <p>During my Ph.D. and throughout my academic career, I saw brilliant researchers and students spending enormous effort just trying to <b>set up, configure, and run</b> atmospheric models — before they could even reach the science they were passionate about. That gap between curiosity and capability inspired everything we built.</p>
+              <p>Learn-DA exists to close that gap. Whether you are a <b>PhD student discovering data assimilation for the first time</b>, a <b>university professor</b> building reproducible simulation workflows for your courses, or a team ready to run <b>regional or global climate experiments</b> — the platform delivers the same scientific rigor, without the infrastructure overhead.</p>
+              <p>The mission is simple: make ensemble data assimilation and atmospheric modeling <b>transparent, accessible, and genuinely useful</b> — for science, for education, and for the real-world decisions that depend on accurate atmospheric knowledge.</p>
+              <div className="modal-sig">
+                — Elías D. Niño-Ruiz, Ph.D.</div>
             </div>
           </motion.div>
         </motion.div>
@@ -342,7 +343,7 @@ function WhoWeServe() {
             <div style={{ fontWeight: 600, color: 'var(--text1)', marginBottom: 4 }}>Not sure which category fits you?</div>
             <div style={{ fontSize: 13, color: 'var(--text2)' }}>Most of our projects combine elements from all three. Let's talk about your specific situation.</div>
           </div>
-          <a href="mailto:elias.d.nino@gmail.com" className="btn-gold" style={{ textDecoration: 'none', display: 'inline-block' }}>
+          <a href="mailto:elias@learn-da.com" className="btn-gold" style={{ textDecoration: 'none', display: 'inline-block' }}>
             Talk to us →
           </a>
         </div>
@@ -977,8 +978,8 @@ function Contact() {
               <div className="contact-sub">We're open to collaborations with energy companies, government agencies, universities, and research labs.</div>
             </div>
             <div style={{ textAlign: 'center', flexShrink: 0 }}>
-              <a href="mailto:elias.d.nino@gmail.com" className="contact-btn">✉ Contact Us</a>
-              <div className="contact-email">elias.d.nino@gmail.com</div>
+              <a href="mailto:elias@learn-da.com" className="contact-btn">✉ Contact Us</a>
+              <div className="contact-email">elias@learn-da.com</div>
             </div>
           </div>
         </div>
