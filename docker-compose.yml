@@ -27,6 +27,8 @@ services:
     volumes:
       - ./nginx-proxy.conf:/etc/nginx/conf.d/default.conf
       - /etc/letsencrypt:/etc/letsencrypt:ro
+    extra_hosts:
+      - "host-gateway:host-gateway"
     depends_on:
       - frontend
       - backend
